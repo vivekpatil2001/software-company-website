@@ -1,0 +1,34 @@
+.box{
+   
+    position: relative;
+    overflow: hidden;
+    box-shadow: 5px 5px 15px rgba(0,0,0,0.5);
+    width: 25vw;
+    height: 25vh;
+    border-radius: 15px 15px 15px 15px;
+    cursor: pointer;
+    /* margin-top: 2rem; */
+
+}
+
+.overlay{
+    height: 100%;
+    width: 100%;
+   bottom: 0;
+    right: -100%;
+    position: absolute;
+    background: #1e1c1cf0;
+    
+    border-radius: 0 0 15px 15px;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    
+    transition: 1s;
+  animation-timing-function:ease-out;
+
+   
+}
+.box:hover .overlay{
+    right: 0;
+}
